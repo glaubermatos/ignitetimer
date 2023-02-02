@@ -26,3 +26,9 @@ Capitulo 2: Páginas e rotas - Layout de rotas
 
 Agora vamos ver como criar um Layout padrão para a nossa aplicação, para que possa ser reaproveitado entre as duas páginas que criamos.
 
+
+Capitulo 2: Páginas e rotas - Estilização do Layout e Componente: Header
+
+Agora vamos ver como organizar o nosso layout e começar a estilização dele para já conseguirmos visualizar como ele ficará na nossa aplicação.
+
+Vamos também estilizar o nosso componente Header e adicionar funcionalidades do react-router para conseguirmos navegar entre as páginas.
