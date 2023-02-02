@@ -57,3 +57,11 @@ Capitulo 2: Páginas e rotas - Componente: Status
 
 Nessa aula vamos estilizar o status da nossa listagem do histórico e aprender algumas funcionalidades mais avançadas do TypeScript para tornar essa funcionalidade mais dinâmica.
 
+
+Capitulo 3: Formulários - React Hook Form
+
+Para adicionar funcionalidade ao nosso formulário, nós vamos utilizar uma das principais bibliotecas de formulários para o react, a react-hook-form.
+
+Vamos ver como utilizar o hook que a biblioteca provém para que consigamos recuperar os dados dos nossos input ao submit do formulário.
+
+
