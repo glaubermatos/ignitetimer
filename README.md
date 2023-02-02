@@ -73,3 +73,8 @@ Nessa aula vamos ver como configurar e utilizar a biblioteca zod e como integrar
 Capitulo 3: Formulários - TypeScript no formulário, inferindo tipagem com o zod
 
 Vamos ver agora como adicionar uma integração do react-hook-form ao TypeScript, adicionando interfaces para que o TypeScript entenda todos os campos existentes no nosso formulário de uma forma mais automatizada.
+
+
+Capitulo 3: Formulários - Resetando formulário
+
+Nessa aula iremos ver como resetar os campos do nosso formulário, para que assim que uma task seja criada o formulário seja limpo automaticamente para que o usuário possa criar uma nova task em outro momento.

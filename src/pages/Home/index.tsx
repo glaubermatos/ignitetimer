@@ -36,7 +36,7 @@ export function Home() {
     // e o register tem a funcionalidade de registrar os inputs nesse novo formulário
 
     // o retorno da função register que recebe o nome do input, devolve metodos como onChange, onBlur, vários metoos que lib utiliza para monitorar o input. ou seja ela retorna propriedades para o input
-    const { register, handleSubmit, watch, formState } = useForm<NewCycleFormData>({
+    const { register, handleSubmit, watch, formState, reset } = useForm<NewCycleFormData>({
         resolver: zodResolver(newCycleFormValidationSchema),
         defaultValues: {
             task: '',
@@ -46,6 +46,7 @@ export function Home() {
 
     function handleCreateNewCycle(data: NewCycleFormData) {
         console.log(data)
+        reset()
     }
 
     console.log(formState.errors)
