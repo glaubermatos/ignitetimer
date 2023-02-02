@@ -24,16 +24,25 @@ const newCycleFormValidationSchema = zod.object({
         .max(60, 'O ciclo precisa ser de no máximo 60 minutos'),
 })
 
+interface NewCycleFormData {
+    task: string;
+    minutesAmount: number;
+}
+
 export function Home() {
     // a função useForm funciona como se estivesse criando um novo formulário
     // e o register tem a funcionalidade de registrar os inputs nesse novo formulário
 
     // o retorno da função register que recebe o nome do input, devolve metodos como onChange, onBlur, vários metoos que lib utiliza para monitorar o input. ou seja ela retorna propriedades para o input
-    const { register, handleSubmit, watch, formState } = useForm({
+    const { register, handleSubmit, watch, formState } = useForm<NewCycleFormData>({
         resolver: zodResolver(newCycleFormValidationSchema),
+        defaultValues: {
+            task: '',
+            minutesAmount: 0,
+        }
     })
 
-    function handleCreateNewCycle(data: any) {
+    function handleCreateNewCycle(data: NewCycleFormData) {
         console.log(data)
     }
 
