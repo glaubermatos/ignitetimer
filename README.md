@@ -52,3 +52,8 @@ Capitulo 2: Páginas e rotas - Página: History
 
 Nessa aula vamos começar a implementar a estrutura e estilização da nossa página de History, criando a tabela com conteúdo fictício e já fazendo a estilização base dela.
 
+
+Capitulo 2: Páginas e rotas - Componente: Status
+
+Nessa aula vamos estilizar o status da nossa listagem do histórico e aprender algumas funcionalidades mais avançadas do TypeScript para tornar essa funcionalidade mais dinâmica.
+
