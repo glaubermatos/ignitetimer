@@ -22,4 +22,7 @@ Nessa aula, veremos sobre como configurar a navegação da nossa aplicação par
 Para isso, vamos instalar a biblioteca React Router DOM e iremos estruturar a navegação da nossa aplicação.
 
 
+Capitulo 2: Páginas e rotas - Layout de rotas
+
+Agora vamos ver como criar um Layout padrão para a nossa aplicação, para que possa ser reaproveitado entre as duas páginas que criamos.
 
