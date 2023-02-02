@@ -42,3 +42,13 @@ Agora vamos criar a estrutura base da nossa página Home, adicionando todo o HTM
 Capitulo 2: Páginas e rotas - Finalização da Home
 
 Vamos agora finalizar a estilização da nossa página Home, adicionando estilos ao formulário e botões dessa página.
+
+Capitulo 2: Páginas e rotas - Aprimorando os inputs
+
+Agora para adicionar detalhes finais e aprimorar ainda mais o funcionamento da aplicação, vamos ver alguns elementos especiais do HTML que nos permitem personalizar as recomendações do Input.
+
+
+Capitulo 2: Páginas e rotas - Página: History
+
+Nessa aula vamos começar a implementar a estrutura e estilização da nossa página de History, criando a tabela com conteúdo fictício e já fazendo a estilização base dela.
+
