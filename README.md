@@ -68,3 +68,8 @@ Vamos ver como utilizar o hook que a biblioteca provém para que consigamos recu
 Capitulo 3: Formulários - Validando formulários
 
 Nessa aula vamos ver como configurar e utilizar a biblioteca zod e como integrar ela com o react-hook-form para adicionar mais camadas de validação para nosso formulário.
+
+
+Capitulo 3: Formulários - TypeScript no formulário, inferindo tipagem com o zod
+
+Vamos ver agora como adicionar uma integração do react-hook-form ao TypeScript, adicionando interfaces para que o TypeScript entenda todos os campos existentes no nosso formulário de uma forma mais automatizada.
