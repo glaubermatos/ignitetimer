@@ -15,4 +15,11 @@ O ESLint possui uma enorme lista de rules (regras) que você pode configurar, e 
 Caso queira ver mais sobre como configurar o ESLint manualmente, você pode ver o guia de Getting Started do ESLint disponível no seguinte link: https://eslint.org/docs/user-guide/getting-started
 
 
+Capitulo 2: Páginas e rotas - React Router DOM
+
+Nessa aula, veremos sobre como configurar a navegação da nossa aplicação para que ela tenha múltiplas páginas.
+
+Para isso, vamos instalar a biblioteca React Router DOM e iremos estruturar a navegação da nossa aplicação.
+
+
 
