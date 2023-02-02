@@ -32,3 +32,13 @@ Capitulo 2: Páginas e rotas - Estilização do Layout e Componente: Header
 Agora vamos ver como organizar o nosso layout e começar a estilização dele para já conseguirmos visualizar como ele ficará na nossa aplicação.
 
 Vamos também estilizar o nosso componente Header e adicionar funcionalidades do react-router para conseguirmos navegar entre as páginas.
+
+
+Capitulo 2: Páginas e rotas - Página: Home
+
+Agora vamos criar a estrutura base da nossa página Home, adicionando todo o HTML estilizando ela para já dar a cara do nosso Layout do Figma.
+
+
+Capitulo 2: Páginas e rotas - Finalização da Home
+
+Vamos agora finalizar a estilização da nossa página Home, adicionando estilos ao formulário e botões dessa página.
