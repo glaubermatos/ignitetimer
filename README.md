@@ -65,3 +65,6 @@ Para adicionar funcionalidade ao nosso formulário, nós vamos utilizar uma das 
 Vamos ver como utilizar o hook que a biblioteca provém para que consigamos recuperar os dados dos nossos input ao submit do formulário.
 
 
+Capitulo 3: Formulários - Validando formulários
+
+Nessa aula vamos ver como configurar e utilizar a biblioteca zod e como integrar ela com o react-hook-form para adicionar mais camadas de validação para nosso formulário.

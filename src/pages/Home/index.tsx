@@ -1,5 +1,7 @@
 import { Play } from 'phosphor-react'
 import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import * as zod from 'zod'
 
 import { CountdownContainer, FormContainer, HomeContainer, MinutesAmountInput, Separator, StartCountdownButton, TaskInput } from "./styles";
 
@@ -14,17 +16,28 @@ import { CountdownContainer, FormContainer, HomeContainer, MinutesAmountInput, S
  * 
  */
 
+const newCycleFormValidationSchema = zod.object({
+    task: zod.string().min(1, 'Informe a tarefa'),
+    minutesAmount: zod
+        .number()
+        .min(5, 'O ciclo precisa ser de no mínimo 5 minutos')
+        .max(60, 'O ciclo precisa ser de no máximo 60 minutos'),
+})
+
 export function Home() {
     // a função useForm funciona como se estivesse criando um novo formulário
     // e o register tem a funcionalidade de registrar os inputs nesse novo formulário
 
     // o retorno da função register que recebe o nome do input, devolve metodos como onChange, onBlur, vários metoos que lib utiliza para monitorar o input. ou seja ela retorna propriedades para o input
-    const { register, handleSubmit, watch } = useForm()
+    const { register, handleSubmit, watch, formState } = useForm({
+        resolver: zodResolver(newCycleFormValidationSchema),
+    })
 
     function handleCreateNewCycle(data: any) {
         console.log(data)
-
     }
+
+    console.log(formState.errors)
 
     const task = watch('task')
     const isSubmitDisabled = !task
@@ -56,7 +69,7 @@ export function Home() {
                         placeholder='00'
                         step={5}
                         min={5}
-                        max={60}
+                        // max={60}
                         {...register('minutesAmount', { valueAsNumber: true})}
                     />
 
