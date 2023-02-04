@@ -87,3 +87,7 @@ Nessa aula, vamos começar a adicionar funcionalidade na nossa aplicação.
 Vamos rever alguns conceitos importantes sobre estado, e já entender como será o fluxo para salvar os ciclos na nossa aplicação.
 
 
+
+Capitulo 4: Funcionalidades da aplicação - Criando countdown
+
+Agora que conseguimos tornar um ciclo em ativo, vamos criar o código responsável por calcular e exibir em tela o valor restante para finalização do ciclo.
