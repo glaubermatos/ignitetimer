@@ -97,3 +97,14 @@ Agora que conseguimos tornar um ciclo em ativo, vamos criar o código responsáv
 Capitulo 4: Funcionalidades da aplicação - Reduzindo countdown
 
 Vamos agora continuar o desenvolvimento do nosso countdown, criando a lógica responsável por diminuir o contador de tempo, e também adicionar uma funcionalidade que reflete o tempo restante no título da página.
+
+
+
+Capitulo 4: Funcionalidades da aplicação - Mudando title da página
+
+Agora que conseguimos reduzir o countdown, percebemos que existem ainda alguns bugs que acontecem quando criamos mais de um ciclo. Nessa aula vamos corrigir esses bugs e também adicionar uma funcionalidade que reflete o tempo restante no título da página
+
+
+
+
+
