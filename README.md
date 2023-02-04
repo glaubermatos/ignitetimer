@@ -91,3 +91,9 @@ Vamos rever alguns conceitos importantes sobre estado, e já entender como será
 Capitulo 4: Funcionalidades da aplicação - Criando countdown
 
 Agora que conseguimos tornar um ciclo em ativo, vamos criar o código responsável por calcular e exibir em tela o valor restante para finalização do ciclo.
+
+
+
+Capitulo 4: Funcionalidades da aplicação - Reduzindo countdown
+
+Vamos agora continuar o desenvolvimento do nosso countdown, criando a lógica responsável por diminuir o contador de tempo, e também adicionar uma funcionalidade que reflete o tempo restante no título da página.
