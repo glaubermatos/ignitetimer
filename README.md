@@ -78,3 +78,12 @@ Vamos ver agora como adicionar uma integração do react-hook-form ao TypeScript
 Capitulo 3: Formulários - Resetando formulário
 
 Nessa aula iremos ver como resetar os campos do nosso formulário, para que assim que uma task seja criada o formulário seja limpo automaticamente para que o usuário possa criar uma nova task em outro momento.
+
+
+Capitulo 4: Funcionalidades da aplicação - Iniciando novo ciclo
+
+Nessa aula, vamos começar a adicionar funcionalidade na nossa aplicação.
+
+Vamos rever alguns conceitos importantes sobre estado, e já entender como será o fluxo para salvar os ciclos na nossa aplicação.
+
+
