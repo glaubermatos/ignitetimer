@@ -105,6 +105,11 @@ Capitulo 4: Funcionalidades da aplicação - Mudando title da página
 Agora que conseguimos reduzir o countdown, percebemos que existem ainda alguns bugs que acontecem quando criamos mais de um ciclo. Nessa aula vamos corrigir esses bugs e também adicionar uma funcionalidade que reflete o tempo restante no título da página
 
 
+Capitulo 4: Funcionalidades da aplicação - Interromper ciclo
+
+Nessa aula, vamos desenvolver a funcionalidade de interromper um ciclo para cadastrarmos um outro, e também anotar a data para manter um histórico de quando o ciclo foi interrompido.
+
+
 
 
 
