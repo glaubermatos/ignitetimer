@@ -116,5 +116,11 @@ Nessa aula, vamos desenvolver a funcionalidade de interromper um ciclo para cada
 
 
 
+Capitulo 4: Funcionalidades da aplicação - Separando componentes
+
+Agora vamos começar a criar uma organização melhor para o nosso projeto, para tirar toda a responsabilidade de somente da página Home e separar em diversos componentes que possuem responsabilidades diferentes.
+
+
+
 
 
