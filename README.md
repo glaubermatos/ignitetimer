@@ -80,6 +80,11 @@ Capitulo 3: Formulários - Resetando formulário
 Nessa aula iremos ver como resetar os campos do nosso formulário, para que assim que uma task seja criada o formulário seja limpo automaticamente para que o usuário possa criar uma nova task em outro momento.
 
 
+Capitulo 3: Funcionalidades da aplicação - Ciclo completo
+
+Para também ter o histórico de todos os ciclos que foram completos, vamos agora desenvolver a funcionalidade que vai anotar a data de finalização de um ciclo quando ele chegar ao fim.
+
+
 Capitulo 4: Funcionalidades da aplicação - Iniciando novo ciclo
 
 Nessa aula, vamos começar a adicionar funcionalidade na nossa aplicação.
