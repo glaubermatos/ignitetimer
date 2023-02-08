@@ -121,6 +121,19 @@ Capitulo 4: Funcionalidades da aplicação - Separando componentes
 Agora vamos começar a criar uma organização melhor para o nosso projeto, para tirar toda a responsabilidade de somente da página Home e separar em diversos componentes que possuem responsabilidades diferentes.
 
 
+Capitulo 4: Funcionalidades da aplicação - Prop Drilling no React
+
+O Prop Drilling é um termo utilizado para quando temos propriedades que estão se repassando em diversas camadas da nossa árvore de componentes.
+
+Nessa aula, vamos ver como isso pode ser prejudicial e entender melhor o problema.
 
 
+Capitulo 5: Entendendo contextos
+
+Vamos introduzir nessa aula um novo conceito, chamado de Contextos no React e vamos criar nosso primeiro Contexto para entender seus principais conceitos e forma de utilização.
+
+
+Capitulo 5: Contexto no React - Convertendo para contexto
+
+Nessa aula vamos alterar o código que criamos com Prop-Drilling para utilizar um Contexto criaremos para compartilhar informações entre os componentes.
 
