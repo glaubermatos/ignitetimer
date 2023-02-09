@@ -137,3 +137,10 @@ Capitulo 5: Contexto no React - Convertendo para contexto
 
 Nessa aula vamos alterar o código que criamos com Prop-Drilling para utilizar um Contexto criaremos para compartilhar informações entre os componentes.
 
+
+Capitulo 5: Contexto no React - Contexto no formulário
+
+Agora que já temos o Contexto funcionando com o nosso Countdown, precisamos também utilizar esse contexto para o formulário de criação de ciclos.
+
+Nessa aula, iremos fazer nossa aplicação voltar funcionar só que utilizando a ContextAPI e também veremos algumas funcionalidades legais do react-hook-form.
+

@@ -12,6 +12,7 @@ import {
   StartCountdownButton,
   StopCountdownButton,
 } from './styles'
+import { FormProvider } from 'react-hook-form'
 
 /**
  * functionregister(nome: string) {
@@ -24,6 +25,7 @@ import {
  *
  */
 
+   
 const newCycleFormValidationSchema = zod.object({
   task: zod.string().min(1, 'Informe a tarefa'),
   minutesAmount: zod
@@ -51,7 +53,10 @@ interface Cycle {
 interface CyclesContextProps {
   activeCycle: Cycle | undefined
   activeCycleId: string | null
+  amountSecondsPassed: number
   onMarkCurrentCycleAsFinished: () => void
+  setSecondsPassed: (seconds: number) => void
+
 }
 
 export const CyclesContext = createContext({} as CyclesContextProps)
@@ -59,23 +64,30 @@ export const CyclesContext = createContext({} as CyclesContextProps)
 export function Home() {
   const [cycles, setCycles] = useState<Cycle[]>([])
   const [activeCycleId, setACtiveCycleId] = useState<string | null>(null)
+  const [amountSecondsPassed, setAmoutSecondsPassed] = useState(0)
 
   // a função useForm funciona como se estivesse criando um novo formulário
-  // e o register tem a funcionalidade de registrar os inputs nesse novo formulário
+    // e o register tem a funcionalidade de registrar os inputs nesse novo formulário
+  
+    // o retorno da função register que recebe o nome do input, devolve metodos como onChange, onBlur, vários metoos que lib utiliza para monitorar o input. ou seja ela retorna propriedades para o input
+   const newCycleForm =
+      useForm<NewCycleFormData>({
+        resolver: zodResolver(newCycleFormValidationSchema),
+        defaultValues: {
+          task: '',
+          minutesAmount: 0,
+        },
+      })
 
-  // o retorno da função register que recebe o nome do input, devolve metodos como onChange, onBlur, vários metoos que lib utiliza para monitorar o input. ou seja ela retorna propriedades para o input
-  const { register, handleSubmit, watch, formState, reset } =
-    useForm<NewCycleFormData>({
-      resolver: zodResolver(newCycleFormValidationSchema),
-      defaultValues: {
-        task: '',
-        minutesAmount: 0,
-      },
-    })
-
-  console.log(formState.errors)
+      const { handleSubmit, watch, formState, reset } = newCycleForm
+  
+    console.log(formState.errors)
 
   const activeCycle = cycles.find((cycle) => cycle.id === activeCycleId)
+
+  function setSecondsPassed(seconds: number) {
+    setAmoutSecondsPassed(seconds)
+  }
   
   function markCurrentCycleAsFinished() {
     setCycles((state) => 
@@ -89,22 +101,22 @@ export function Home() {
     )
   }
 
-  // function handleCreateNewCycle(data: NewCycleFormData) {
-  //   const id = String(new Date().getTime())
+  function handleCreateNewCycle(data: NewCycleFormData) {
+    const id = String(new Date().getTime())
 
-  //   const newCycle: Cycle = {
-  //     id,
-  //     task: data.task,
-  //     minutesAmount: data.minutesAmount,
-  //     startDate: new Date(),
-  //   }
+    const newCycle: Cycle = {
+      id,
+      task: data.task,
+      minutesAmount: data.minutesAmount,
+      startDate: new Date(),
+    }
 
-  //   setCycles((state) => [...state, newCycle])
-  //   setACtiveCycleId(id)
-  //   setAmoutSecondsPassed(0)
+    setCycles((state) => [...state, newCycle])
+    setACtiveCycleId(id)
+    setAmoutSecondsPassed(0)
 
-  //   reset()
-  // }
+    reset()
+  }
 
   function handleInterruptCycle() {
     // no React não  podemos alterar os dados de um estado ferindo os 
@@ -122,21 +134,25 @@ export function Home() {
     setACtiveCycleId(null)
   }
 
-  // const task = watch('task')
-  // const isSubmitDisabled = !task
+  const task = watch('task')
+  const isSubmitDisabled = !task
 
   // console.log(cycles)
 
   return (
     <HomeContainer>
-      <form /*onSubmit={handleSubmit(handleCreateNewCycle)}*/>
+      <form onSubmit={handleSubmit(handleCreateNewCycle)}>
         
         <CyclesContext.Provider value={{
           activeCycle,
           activeCycleId,
-          onMarkCurrentCycleAsFinished: markCurrentCycleAsFinished
+          onMarkCurrentCycleAsFinished: markCurrentCycleAsFinished,
+          amountSecondsPassed,
+          setSecondsPassed
         }}>
-          {/* <NewCycleForm /> */}
+          <FormProvider {...newCycleForm}>
+            <NewCycleForm />
+          </FormProvider>
           <Countdown />
         </CyclesContext.Provider>
 
@@ -146,7 +162,7 @@ export function Home() {
             Interromper
           </StopCountdownButton>
         ) : (
-          <StartCountdownButton /*disabled={isSubmitDisabled}*/ type="submit">
+          <StartCountdownButton disabled={isSubmitDisabled} type="submit">
             <Play size={24} />
             Começar
           </StartCountdownButton>
