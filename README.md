@@ -144,3 +144,10 @@ Agora que já temos o Contexto funcionando com o nosso Countdown, precisamos tam
 
 Nessa aula, iremos fazer nossa aplicação voltar funcionar só que utilizando a ContextAPI e também veremos algumas funcionalidades legais do react-hook-form.
 
+
+Capitulo 5: Contexto no React - Contexto entre rotas
+
+Agora que nos aprofundamos mais no conceito de Contexto, nessa aula iremos aprender como deixar as informações dos Contextos disponíveis para que possam ser usadas em várias rotas da aplicação.
+
+
+
