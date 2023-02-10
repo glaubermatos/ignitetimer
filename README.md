@@ -169,3 +169,7 @@ Capitulo 6: Reducers - Criando reducer de ciclos
 Agora vamos aprender um novo conceito, chamado de userReducer que serve para armazenar informações mais complexas e que demandam muitas linhas de código para alterá-las.
 Nessa aula, iremos aplicar o userReducer nos ciclos da nossa aplicação.
 
+
+Capitulo 6: Reducers - Salvando um objeto no Reducer
+
+Nessa aula iremos nos aprofundar mais no contexto de reducer e aprender que podemos salvar várias informações nele, inclusive um objeto, sem atrapalhar a sua funcionalidade.
