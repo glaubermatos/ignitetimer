@@ -150,4 +150,8 @@ Capitulo 5: Contexto no React - Contexto entre rotas
 Agora que nos aprofundamos mais no conceito de Contexto, nessa aula iremos aprender como deixar as informações dos Contextos disponíveis para que possam ser usadas em várias rotas da aplicação.
 
 
+Capitulo 5: Contexto no React - Reset do formulário
+
+Nesta aula iremos criar uma nova função de reset para o formulário para que não seja necessário levar nenhuma biblioteca pra dentro do contexto.
+
 
