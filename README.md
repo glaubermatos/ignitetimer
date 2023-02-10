@@ -188,3 +188,8 @@ Capitulo 6: Reducers - Separando Actions
 
 Seguindo a mesma linha de raciocínio da aula anterior, agora iremos abstrair as chamadas das actions para outro arquivo.
 
+
+Capitulo 6: Reducers - Utilizando immer
+
+Agora vamos utilizar a biblioteca Immer pra nos ajudar a lidar com os dados da nossa aplicação sem termos que nos preocupar com a imutabilidade do react.
+
