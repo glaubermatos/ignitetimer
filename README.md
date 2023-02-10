@@ -163,3 +163,9 @@ Agora vamos partir pra listagem de todos os dados do Contexto no nosso históric
 Capitulo 5: Contexto no React - Formatação de data
 
 Nesta aula iremos aprender a formatar a data de início utilizando o método formatDaistanceToNow da biblioteca date-fns.
+
+Capitulo 6: Reducers - Criando reducer de ciclos
+
+Agora vamos aprender um novo conceito, chamado de userReducer que serve para armazenar informações mais complexas e que demandam muitas linhas de código para alterá-las.
+Nessa aula, iremos aplicar o userReducer nos ciclos da nossa aplicação.
+
