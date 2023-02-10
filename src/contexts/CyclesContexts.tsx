@@ -28,7 +28,7 @@ export function CyclesContextProvider({
 }: CyclesContextProviderProps) {
   const [cyclesState, dispatch] = useReducer(cyclesReducer, {
     cycles: [],
-    activeCycleId: null
+    activeCycleId: null,
   })
 
   const [amountSecondsPassed, setAmoutSecondsPassed] = useState(0)
@@ -39,7 +39,7 @@ export function CyclesContextProvider({
 
   function markCurrentCycleAsFinished() {
     dispatch({
-      type:  ActionTypes.MARK_CURRENT_CYCLE_AS_FINISHED,
+      type: ActionTypes.MARK_CURRENT_CYCLE_AS_FINISHED,
       activeCycleId,
     })
   }
@@ -59,7 +59,7 @@ export function CyclesContextProvider({
     }
 
     dispatch({
-      type:  ActionTypes.ADD_NEW_CYCLE,
+      type: ActionTypes.ADD_NEW_CYCLE,
       payload: {
         newCycle,
       },
@@ -74,7 +74,7 @@ export function CyclesContextProvider({
     }
 
     dispatch({
-      type:  ActionTypes.INTERRUPT_CURRENT_CYCLE,
+      type: ActionTypes.INTERRUPT_CURRENT_CYCLE,
       payload: {
         activeCycleId,
       },
