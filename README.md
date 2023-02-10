@@ -198,3 +198,7 @@ Capitulo 6: Reducers - Salvando estado no storage
 
 Nessa aula iremos aprender como salvar algumas informações da nossa aplicação no Storage do navegador, para não perdermos os dados dos ciclos caso a página seja atualizada.
 
+Capitulo 6: Reducers - Corrigindo listagem do histórico
+
+Agora vamos finalizar o módulo corrigindo a formatação das datas na página de Histórico.
+
