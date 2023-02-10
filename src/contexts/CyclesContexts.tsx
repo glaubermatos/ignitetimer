@@ -5,7 +5,7 @@ interface Cycle {
     task: string
     minutesAmount: number
     startDate: Date
-    interruptdDate?: Date
+    interruptedDate?: Date
     finishedDate?: Date
 }
 
@@ -36,7 +36,7 @@ export function CyclesContextProvider({children}: CyclesContextProviderProps) {
   const [activeCycleId, setActiveCycleId] = useState<string | null>(null)
   const [amountSecondsPassed, setAmoutSecondsPassed] = useState(0)
 
-  const activeCycle = cycles.find((cycle) => cycle.id === activeCycleId)
+  let activeCycle = cycles.find((cycle) => cycle.id === activeCycleId)
   
   function markCurrentCycleAsFinished() {
     setCycles((state) => 
@@ -70,6 +70,12 @@ export function CyclesContextProvider({children}: CyclesContextProviderProps) {
   }
 
   function interruptCurrentCycle() {
+    setActiveCycleId(null)
+
+    if (activeCycle?.finishedDate) {
+      return
+    }
+
     // no React não  podemos alterar os dados de um estado ferindo os 
     // princípios da imutabilidade
     setCycles((state) => 
@@ -81,8 +87,6 @@ export function CyclesContextProvider({children}: CyclesContextProviderProps) {
         }
       }),
     )
-
-    setActiveCycleId(null)
   }
 
   return (

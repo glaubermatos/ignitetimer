@@ -155,3 +155,7 @@ Capitulo 5: Contexto no React - Reset do formulário
 Nesta aula iremos criar uma nova função de reset para o formulário para que não seja necessário levar nenhuma biblioteca pra dentro do contexto.
 
 
+Capítulo 5: Contexto no React - Listagem do histórico
+
+Agora vamos partir pra listagem de todos os dados do Contexto no nosso histórico de forma dinâmica.
+
