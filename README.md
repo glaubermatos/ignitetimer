@@ -178,3 +178,9 @@ Nessa aula iremos nos aprofundar mais no contexto de reducer e aprender que pode
 Capitulo 6: Reducers - Marcando ciclo como finalizado
 
 A ideia agora é conseguir marcar o ciclo como finalizado. Além disso, iremos fazer uma pequena refatoração no código substituindo as condicionais if pelo switch.
+
+Capitulo 6: Reducers - Separando Action Types
+
+Nessa aula iremos criar uma ActionTypes para separar as nossas actions, ajudando na manutenção do código e facilitando a sua chamada caso a gente não se recorde exatamente o nome que foi dado a ela.
+
+
