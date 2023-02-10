@@ -159,3 +159,7 @@ Capítulo 5: Contexto no React - Listagem do histórico
 
 Agora vamos partir pra listagem de todos os dados do Contexto no nosso histórico de forma dinâmica.
 
+
+Capitulo 5: Contexto no React - Formatação de data
+
+Nesta aula iremos aprender a formatar a data de início utilizando o método formatDaistanceToNow da biblioteca date-fns.
