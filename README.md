@@ -193,3 +193,8 @@ Capitulo 6: Reducers - Utilizando immer
 
 Agora vamos utilizar a biblioteca Immer pra nos ajudar a lidar com os dados da nossa aplicação sem termos que nos preocupar com a imutabilidade do react.
 
+
+Capitulo 6: Reducers - Salvando estado no storage
+
+Nessa aula iremos aprender como salvar algumas informações da nossa aplicação no Storage do navegador, para não perdermos os dados dos ciclos caso a página seja atualizada.
+
