@@ -173,3 +173,8 @@ Nessa aula, iremos aplicar o userReducer nos ciclos da nossa aplicação.
 Capitulo 6: Reducers - Salvando um objeto no Reducer
 
 Nessa aula iremos nos aprofundar mais no contexto de reducer e aprender que podemos salvar várias informações nele, inclusive um objeto, sem atrapalhar a sua funcionalidade.
+
+
+Capitulo 6: Reducers - Marcando ciclo como finalizado
+
+A ideia agora é conseguir marcar o ciclo como finalizado. Além disso, iremos fazer uma pequena refatoração no código substituindo as condicionais if pelo switch.
