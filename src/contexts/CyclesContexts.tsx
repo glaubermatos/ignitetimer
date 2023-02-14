@@ -5,13 +5,17 @@ import {
   useReducer,
   useState,
 } from 'react'
-import { Cycle, cyclesReducer } from '../reducers/cycles/reducer'
-import { differenceInSeconds } from 'date-fns'
+
+import { version } from '../../package.json'
+
 import {
   addNewCycleAction,
   interruptCurrentCycleAction,
   markCurrentCycleAsFinishedAction,
 } from '../reducers/cycles/actions'
+
+import { Cycle, cyclesReducer } from '../reducers/cycles/reducer'
+import { differenceInSeconds } from 'date-fns'
 
 interface createCycleData {
   task: string
@@ -44,14 +48,16 @@ export function CyclesContextProvider({
       cycles: [],
       activeCycleId: null,
     },
-    () => {
+    (initialValue) => {
       const storedStateJSON = localStorage.getItem(
-        '@ignite-timer:cycles-state-1.0.0',
+        `@ignite-timer:cycles-state-${version}`,
       )
 
       if (storedStateJSON) {
         return JSON.parse(storedStateJSON)
       }
+
+      return initialValue
     },
   )
 
